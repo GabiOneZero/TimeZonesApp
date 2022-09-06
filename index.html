@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    
-    <script type="module" src="/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+		<title>TimeZones 📅</title>
+	</head>
+	<body>
+		<main class="container">
+      <h1>Time Zones</h1>
+      <form>
+        <input type="datetime-local" value="2022-09-06T17:00" name="date" id="date">
+        <button>Convertir fecha y hora</button>
+      <br>
+      <textarea name="result" id="result" cols="30" rows="10" readonly style="resize:none;" placeholder="Aquí aparece el resultado"></textarea>
+      </form>      
+    </main>
+		<script type="module" src="/main.js"></script>
+	</body>
 </html>
