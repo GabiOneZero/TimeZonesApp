@@ -1,14 +1,23 @@
-import countries from './countries.json'
-//$ -> no es Jquery
-// Es una función de nombre -> $
-const $ = selector => document.querySelector(selector)
+import './style.css'
+import javascriptLogo from './javascript.svg'
+import { setupCounter } from './counter.js'
 
-const spainInfo = countries.find(country => country.country_code === 'ES')
+document.querySelector('#app').innerHTML = `
+  <div>
+    <a href="https://vitejs.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+    </a>
+    <h1>Hello Vite!</h1>
+    <div class="card">
+      <button id="counter" type="button"></button>
+    </div>
+    <p class="read-the-docs">
+      Click on the Vite logo to learn more
+    </p>
+  </div>
+`
 
-$('form').addEventListener('submit', (event) => {
-    event.preventDefault()
-    //Convertir lo que obtenemos del FormData en un objeto JSON
-    const { date } = Object.fromEntries(new window.FormData(event.target))
-    console.log(data)
-
-})
+setupCounter(document.querySelector('#counter'))
