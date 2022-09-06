@@ -1,0 +1,20 @@
+{
+    "name": "Spain",
+    "dial_code": "+34",
+    "country_code": "ES",
+    "emoji": "🇪🇸",
+    "emoji_unicode": "U+1F1EA U+1F1F8",
+    "emoji_svg_url": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ES.svg",
+    "timezones": [
+      "Europe/Madrid",
+      "Africa/Ceuta",
+      "Atlantic/Canary"
+    ],
+    "latlng": [
+      40,
+      -4
+    ],
+    "capital": "Madrid",
+    "currency_code": "EUR",
+    "continent": "Europe"
+  }
